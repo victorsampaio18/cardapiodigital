@@ -1,5 +1,4 @@
-//Aluno: Guilherme Moraes Campelo | Matricula: UC20103650
-//Aluno: Victor Sampaio de Almeida | Matricula: UC20100460
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -29,34 +28,34 @@ int main(int argc, char *argv[]) {
 		printf(" _______________________\n");
 		printf("| RESTAURANTE RODRIGUES |\n");
 		printf("|-----------------------|\n");
-		printf("|    1 - Funcion·rio    |\n");
+		printf("|    1 - Funcion√°rio    |\n");
 		printf("|    2 - Cliente        |\n");
 		printf("|    3 - Sair           |\n");
 		printf("|_______________________|\n");
-		printf("\nEscolha uma opÁ„o:\n");
+		printf("\nEscolha uma op√ß√£o:\n");
 		scanf("%i", &op);
 		switch(op){
 			case 1:
 				system("cls");
-				printf("LOGIN FUNCION¡RIO\n");
+				printf("LOGIN FUNCION√ÅRIO\n");
 				if(login()==1){
 					do{
 					system("cls");
 					printf(" _________________\n");
-					printf("|   FUNCION¡RIO   |\n");
+					printf("|   FUNCION√ÅRIO   |\n");
 					printf("|-----------------|\n");
 					printf("|  1 - Cadastrar  |\n");
 					printf("|  2 - Editar     |\n");
 					printf("|  3 - Excluir    |\n");
-					printf("|  4 - Card·pio   |\n");
+					printf("|  4 - Card√°pio   |\n");
 					printf("|  5 - Voltar     |\n");
 					printf("|_________________|\n");
-					printf("\nEscolha uma opÁ„o:\n");
+					printf("\nEscolha uma op√ß√£o:\n");
 					scanf("%i", &op2);
 					switch(op2){
 						case 1:
 							system("cls");
-							printf("Digite o numero de produtos que ser„o cadastrados:\n");
+							printf("Digite o numero de produtos que ser√£o cadastrados:\n");
 							scanf("%i", &numProd);
 							system("cls");
 							do{
@@ -71,13 +70,13 @@ int main(int argc, char *argv[]) {
 							break;
 						case 2:
 							system("cls");
-							printf("EDITAR CARD¡PIO\n");
-							printf("ATEN«√O: SÛ pode editar descriÁ„o e preÁo!\n");
+							printf("EDITAR CARD√ÅPIO\n");
+							printf("ATEN√á√ÉO: S√≥ pode editar descri√ß√£o e pre√ßo!\n");
 							editar();
 							break;
 						case 3:
 							system("cls");
-							printf("EXCLUIR ITEM DO CARD¡PIO\n");
+							printf("EXCLUIR ITEM DO CARD√ÅPIO\n");
 							remover();
 							break;
 						case 4:
@@ -85,14 +84,14 @@ int main(int argc, char *argv[]) {
 								system("cls");
 								system(" color 7");
 								printf(" ____________________\n");
-								printf("|      CARD¡PIO      |\n");
+								printf("|      CARD√ÅPIO      |\n");
 								printf("|--------------------|\n");
 								printf("|     1 - Bebidas    |\n");
 								printf("|     2 - Comidas    |\n");
 								printf("|     3 - Vinhos     |\n");
 								printf("|     4 - Voltar     |\n");
 								printf("|____________________|\n");
-								printf("\nEscolha uma opÁ„o:\n");
+								printf("\nEscolha uma op√ß√£o:\n");
 								scanf("%i", &op4);
 								switch(op4){
 									case 1:
@@ -122,14 +121,14 @@ int main(int argc, char *argv[]) {
 									case 4:
 										break;
 									default:
-										puts("OpÁ„o invalida");
+										puts("Op√ß√£o invalida");
 									}
 								}while(op4!=4);
 							break;
 						case 5:
 							break;
 						default:
-							puts("OpÁ„o invalida");	
+							puts("Op√ß√£o invalida");	
 						}
 					}while(op2!=5);
 				}
@@ -139,14 +138,14 @@ int main(int argc, char *argv[]) {
 					system("cls");
 					system(" color 7");
 					printf(" ____________________\n");
-					printf("|      CARD¡PIO      |\n");
+					printf("|      CARD√ÅPIO      |\n");
 					printf("|--------------------|\n");
-					printf("|  1 - Card·pio      |\n");
-					printf("|  2 - Card·pio Ord. |\n");
+					printf("|  1 - Card√°pio      |\n");
+					printf("|  2 - Card√°pio Ord. |\n");
 					printf("|  3 - Pesquisar     |\n");
 					printf("|  4 - Voltar        |\n");
 					printf("|____________________|\n");
-					printf("\nEscolha uma opÁ„o:\n");
+					printf("\nEscolha uma op√ß√£o:\n");
 					scanf("%i", &op3);
 					switch(op3){
 						case 1:
@@ -154,14 +153,14 @@ int main(int argc, char *argv[]) {
 								system("cls");
 								system(" color 7");
 								printf(" ____________________\n");
-								printf("|      CARD¡PIO      |\n");
+								printf("|      CARD√ÅPIO      |\n");
 								printf("|--------------------|\n");
 								printf("|     1 - Bebidas    |\n");
 								printf("|     2 - Comidas    |\n");
 								printf("|     3 - Vinhos     |\n");
 								printf("|     4 - Voltar     |\n");
 								printf("|____________________|\n");
-								printf("\nEscolha uma opÁ„o:\n");
+								printf("\nEscolha uma op√ß√£o:\n");
 								scanf("%i", &op4);
 								switch(op4){
 									case 1:
@@ -191,24 +190,24 @@ int main(int argc, char *argv[]) {
 									case 4:
 										break;
 									default:
-										puts("OpÁ„o invalida");
+										puts("Op√ß√£o invalida");
 								}
 							}while(op4!=4);
 							break;
 						case 2:
 							system("cls");
-							printf("CARD¡PIO\n");
+							printf("CARD√ÅPIO\n");
 							ordenacao(l);
 							break;
 						case 3:
 							system("cls");
-							printf("PESQUISA NO CARD¡PIO\n");
+							printf("PESQUISA NO CARD√ÅPIO\n");
 							pesquisar();
 							break;
 						case 4:
 							break;
 						default:
-							puts("OpÁ„o invalida");
+							puts("Op√ß√£o invalida");
 					}
 				}while(op3!=4);
 				break;
@@ -216,7 +215,7 @@ int main(int argc, char *argv[]) {
 				exit(1);
 				break;
 			default:
-				puts("OpÁ„o invalida");
+				puts("Op√ß√£o invalida");
 		}
 	}while(1);
 	return 0;
