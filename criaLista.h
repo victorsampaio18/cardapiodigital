@@ -1,0 +1,3 @@
+Lista *criar(){
+	return NULL;
+}
